@@ -1,0 +1,25 @@
+<view class="container">
+  <view class='title'>联系作者</view>
+  <view class="innerContainer">
+    <view class="info" bindtap="callme">
+      <image mode='aspectFit' class="icon" src='../../image/phone.png'></image>
+      13292801889</view>
+    <view class="info">
+      <image mode='aspectFit' class="icon" src='../../image/wechat.svg'></image>
+      13292801889</view>
+    <view class="info">
+      <image mode='aspectFit' class="icon" src='../../image/qq.svg'></image>
+      826091200</view>
+    <view class="userinfo">
+      <button class="recordBtn">
+        <image class='btnImg' src='https://liuboyang.top/static/images/siteCode.png'></image>
+        <view>个人博客</view>
+      </button>
+      <view>https://liuboyang.top</view>
+    </view>
+  </view>
+
+
+
+
+</view>

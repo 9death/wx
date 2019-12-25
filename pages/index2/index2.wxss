@@ -1,0 +1,52 @@
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.recordBtn {
+  background-color: white;
+}
+
+.btnImg {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.title {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.icon {
+  width: 50rpx;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

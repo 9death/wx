@@ -1,0 +1,77 @@
+/**index.wxss**/
+@import "../../lib/weui.wxss";
+.userinfo {
+  display: flex;
+  justify-content: center;
+}
+
+.screen {
+  width: 250px;
+  height: 350px;
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tipBtn {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.controls {
+  width: 100%;
+  position: fixed;
+  bottom: 10rpx;
+}
+
+.recordBtn {
+  background-color: white;
+}
+
+.btnImg {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.innercontainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.camera {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.userimage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

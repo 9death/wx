@@ -1,0 +1,51 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view wx:if="{{!hasKnown}}" class="container">
+    <camera class='camera' wx:if="{{takingPhoto}}" device-position="front" flash="off" binderror="error">
+      <cover-view class="tip">
+        <button class="tipBtn" bindtap='stopCamera'>返回</button>
+        <cover-image src="../../image/screen.gif" class="screen"></cover-image>
+      </cover-view>
+    </camera>
+    <button bindtap="startCamera" class="recordBtn">
+      <image class='btnImg' src='../../image/shake.png'></image>
+      <view>我们认识一下</view>
+    </button>
+  </view>
+
+  <view class="innercontainer" wx:else>
+    <button wx:if="{{hasKnown}}" bindtap="startCamera" class="recordBtn">
+      <image class='btnImg' src='../../image/shake.png'></image>
+      <view>我们认识一下</view>
+    </button>
+    <view wx:if="{{isGuest}}" class="page-section">
+      <view class="weui-cells__title">请输入你的名字</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" auto-focus placeholder="Enter your name" bindinput="onNameInput" />
+          <button type='primary' bindtap='onNameBtnClick' loading="{{loading}}">确认</button>
+        </view>
+      </view>
+    </view>
+    <view class="userimage">
+
+      <image mode='aspectFit' src="{{src}}">
+      </image>
+      <text>{{text}}</text>
+    </view>
+
+
+    <view wx:if="{{!isGuest}}" class="controls">
+      <button wx:if="{{!recordIsStart}}" bindtap="startRecord" class="recordBtn">
+        <image class='btnImg' src='../../image/microphone.png'></image>
+        <view>开始录音</view>
+      </button>
+      <button wx:else bindtap="stopRecord" class="recordBtn">
+        <image class='btnImg' src='../../image/stop.png'></image>
+        <view>停止录音</view>
+      </button>
+    </view>
+  </view>
+
+</view>

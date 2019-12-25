@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index2/index2"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/gameOff.png",
+        "selectedIconPath": "image/gameOn.png",
+        "text": "体验"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "iconPath": "image/userOff.png",
+        "selectedIconPath": "image/userOn.png",
+        "text": "作者"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Game",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 1000000,
+    "connectSocket": 100000,
+    "uploadFile": 100000,
+    "downloadFile": 100000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
